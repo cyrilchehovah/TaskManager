@@ -1,0 +1,5 @@
+<%= form_for @task do |f| %>
+  <%= f.text_field :title, :placeholder => " enter the task title here "%> <br />
+  <%= f.check_box :checked, {}, true, false %> <br />
+  <%= f.submit %> <br />
+<% end %>

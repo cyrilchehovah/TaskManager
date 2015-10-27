@@ -1,0 +1,9 @@
+<h2> <%= @task.title %> </h2>
+<h3> <%= @task.checked %> </h3>
+<p> <%= @task.created_at.strftime("%b %d, %Y") %> </p>
+<%= link_to "view all", tasks_path %>
+<%= link_to "edit task", edit_task_path %>
+<%= link_to "new task", new_task_path %>
+<%= link_to "delete task", task_path, method: :delete %>
+
+<!-- Should display the task's details (content, date of creation, etc.) and a back-link to the index page.
